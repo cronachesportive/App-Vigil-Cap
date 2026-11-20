@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatigue Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Fatigue Monitor</h1>
+        <button id="connectBtn">Connetti Arduino</button>
+        <div id="connectionStatus">Disconnesso</div>
+    </header>
+
+    <section class="dashboard">
+
+        <div class="card">
+            <h3>Ammiccamenti/min</h3>
+            <span id="blinkValue">--</span>
+        </div>
+
+        <div class="card">
+            <h3>Frequenza Cardiaca</h3>
+            <span id="heartValue">--</span>
+        </div>
+
+        <div class="card">
+            <h3>Movimento ultime ore</h3>
+            <span id="movementValue">--</span>
+        </div>
+
+    </section>
+
+    <section class="fatigue-box">
+
+        <h2>Livello di affaticamento</h2>
+
+        <div id="fatigueLevel" class="level low">
+            BASSO
+        </div>
+
+        <div id="fatigueScore">
+            Punteggio: 0
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
